@@ -101,8 +101,6 @@ int main()
         std::cin >> credits ;
         std::cout << "course grade?" ;
         std::cin >> grade ;
-        // std::cout<< "your stdnumber?";
-        // std ::cin >> studentnum;
         s.register_course(credits, bufc, grade);
         s.list_courses();
         
