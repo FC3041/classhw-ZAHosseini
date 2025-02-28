@@ -7,6 +7,7 @@ class MyList
 {
     public:
         int m_size;
+        int m_capacity;
         int* m_Pnums;
 
     MyList(int size, int *nums)
@@ -26,7 +27,7 @@ class MyList
         resize(m_size+1);
         m_Pnums[m_size-1] = x;
         print(m_Pnums,m_size);
-        count (m_size);
+        count (m_capacity);
         
     }
     void remove(){
@@ -63,15 +64,31 @@ class MyList
     private:
     void resize(int newsize)
     {
-        int* newMem = (int*)malloc(sizeof(int)*newsize);
-        int i=0;
-        for(i=0; i<m_size;i++)
-        {
-            newMem[i] = m_Pnums[i];
+        if(newsize<=m_size){
+            int* newMem = (int*)malloc(sizeof(int)*newsize);
+            int i=0;
+            for(i=0; i<m_size;i++)
+            {
+                newMem[i] = m_Pnums[i];
+            }
+            free(m_Pnums);
+            m_size = newsize;
+            m_Pnums = newMem;
+
         }
-        free(m_Pnums);
-        m_size = newsize;
-        m_Pnums = newMem;
+        else{
+            int* newMem = (int*)malloc(sizeof(int)*m_size*2);
+            int i=0;
+            for(i=0; i<m_size;i++)
+            {
+                newMem[i] = m_Pnums[i];
+            }
+            free(m_Pnums);
+            m_capacity = m_size*2;
+            m_Pnums = newMem;
+
+        }
+        
     }
     void count(int size){
         int count=0;
