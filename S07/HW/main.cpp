@@ -16,7 +16,7 @@ class KeepTime{
         double r=1;
         long double MasahatKore=0;
         for(int i=0;i<100000000;i++){
-            MasahatKore+=4*pi*r*r*r;
+            MasahatKore+=4*pi*r*r;
 
 
         }
