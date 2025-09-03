@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "whilelooppart5", "whilelooppart5.csproj", "{A38D6720-84DD-AED8-F9C3-5462F457A339}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A38D6720-84DD-AED8-F9C3-5462F457A339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38D6720-84DD-AED8-F9C3-5462F457A339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38D6720-84DD-AED8-F9C3-5462F457A339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38D6720-84DD-AED8-F9C3-5462F457A339}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59386BCC-C456-49F0-840B-2BBD276B4256}
+	EndGlobalSection
+EndGlobal
